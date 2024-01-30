@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Proposal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffd3e0; /* Light pink background */
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #e84a5f;
+            font-size: 32px;
+        }
+
+        #care-bear-img {
+            width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        #proposal-message {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        #yes-button, #no-button {
+            padding: 10px 20px;
+            font-size: 32px;
+            background-color: #e84a5f; /* Pink color for buttons */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #yes-button:hover, #no-button:hover {
+            background-color: #c1354a; /* Darker pink on hover */
+        }
+
+        .response-message {
+            margin-top: 20px;
+            color: #e84a5f;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Momo, queres ser a minha Valentine?</h1>
+    <img src="ursorosa.png" alt="Pink Care Bear" id="care-bear-img">
+    <div id="proposal-message">
+        <p>Clica la sff!</p>
+    </div>
+    <div class="button-container">
+        <button id="yes-button">Sim</button>
+        <button id="no-button">Não</button>
+    </div>
+    <div id="response-message" class="response-message"></div>
+
+    <script>
+        document.getElementById('yes-button').addEventListener('click', function() {
+            document.getElementById('response-message').innerText = "Dia 14 tem já sabesss!";
+        });
+
+        document.getElementById('no-button').addEventListener('click', function() {
+            document.getElementById('response-message').innerText = "Achas mesmo que este botão ia funcionar?";
+        });
+    </script>
+</body>
+</html>
